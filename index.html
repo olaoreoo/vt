@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Index - Creativo Bootstrap Template</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <title>:: Home</title>
+  <meta name="description" content="Information Technology" />
+  <meta name="keywords" content="ai, tech, computers, programming, design, utilities" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
@@ -43,7 +43,7 @@
 
   <main class="main">
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class=" hero section light-background">
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-down">
@@ -142,7 +142,7 @@
     <!-- /Faq Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section"></section>
+    <section id="contact" class="hide contact section"></section>
     <!-- /Contact Section -->
   </main>
 
@@ -161,6 +161,7 @@
 
   <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- <script defer src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script defer src="assets/js/jquery.validate.js"></script>
   <script defer src="assets/vendor/aos/aos.js"></script>
   <script defer src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script defer src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
@@ -170,82 +171,10 @@
 
   <!-- Main JS File -->
   <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/jquery.validate.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script defer src="assets/js/custom.js"></script>
+  <script  type="module"  src="assets/js/load.js"></script>
   <script defer src="assets/js/contact.js"></script>
-  <script type="module">
-    // import { load_services, load_footer } from "./assets/js/custom.js";
-    (function () {
-      function load_services() {
-        const tbl_cont = $("#services");
-        const posturl = "components/services.html";
-        // tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-        return;
-      }
-      // load_services();
 
-      function load_footer() {
-        const tbl_cont = $("#footer");
-        const posturl = "components/footer.html";
-        tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-
-        return;
-      }
-      load_footer();
-
-      function load_header() {
-        const tbl_cont = $("#header");
-        const posturl = "components/header.html";
-        tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-
-        return;
-      }
-      load_header();
-      // load_header();
-
-      function load_about() {
-        const tbl_cont = $("#about");
-        const posturl = "components/about.html";
-        tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-
-        return;
-      }
-      load_about();
-
-      function load_team() {
-        const tbl_cont = $("#team");
-        const posturl = "components/team.html";
-        tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-        return;
-      }
-      // load_team();
-
-      function load_testimonials() {
-        const tbl_cont = $("#testimonials");
-        const posturl = "components/testimonials.html";
-        tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-        return;
-      }
-      // load_testimonials();
-
-      function load_contact() {
-        const tbl_cont = $("#contact");
-        const posturl = "components/contact.html";
-        tbl_cont.load(posturl);
-        tbl_cont.removeClass("hide");
-        return;
-      }
-      load_contact();
-
-    })();
-    
-  </script>
 </body>
 
 </html>

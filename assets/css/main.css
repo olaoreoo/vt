@@ -61,10 +61,7 @@
   display: none;
   z-index: 100;
 }
-.error {
-color: var(--bs-red);
-/* padding: .5rem; */
-}
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -101,7 +98,13 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-form .error-message, error {
+form .error {
+color: var(--bs-red);
+padding-top: 5px;
+padding-left: 8px;
+}
+
+form .error-message {
   /* display: none; */
   background: #df1529;
   color: #ffffff;

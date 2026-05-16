@@ -1,6 +1,6 @@
 // using fetch
 // const fetch_url = "http://localhost:81/bizadmin/api/api.clients.php/";
-const fetch_url = "./assets/data/company.json";
+const fetch_url = "http://localhost:81/vt/assets/data/company.json";
 
 const company_data = async () => {
 // async () => {
@@ -17,7 +17,6 @@ const company_data = async () => {
     }
     $("#name").html(fname + " : ");
     $("#name").append(address + " : ");
-
     $("#name").append(phone + " ");
   } catch (error) {
      console.log(error);
