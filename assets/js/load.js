@@ -12,6 +12,7 @@ import {
 load_footer();
 load_header();
 load_menu();
+load_services();
 
 // load_about();
 // load_whyus();
