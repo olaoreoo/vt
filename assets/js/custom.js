@@ -3,6 +3,7 @@
  * Begining of custom scripts
  */
 
+
 export function load_header() {
   const tbl_cont = $("#header");
   const posturl = "components/header.html";
