@@ -1,23 +1,15 @@
-export function load_header() {
-  const tbl_cont = $("#header");
-  var posturl = "../assets/header.html";
-  tbl_cont.load(posturl);
-  console.log("header loaded");
-  return;
-}
+import {
+  load_footer,
+  load_header,
+  load_whyus,
+  load_services,
+  load_testimonials,
+} from "./services_page.js";
 
-export function load_servicedata() {
-  const tbl_cont = $("#service-details");
-  var posturl = "index2.html";
-  tbl_cont.load(posturl);
-  console.log("service data loaded");
-  return;
-}
+load_footer();
+load_header();
 
-export function load_footer() {
-  const tbl_cont = $("#footer");
-  var posturl = "../../components/footer.html";
-  tbl_cont.load(posturl);
-  console.log("loaded - footer");
-  return;
-}
+// import { load_team } from "../assets/js/custom.js";
+load_whyus();
+load_services();
+load_testimonials();

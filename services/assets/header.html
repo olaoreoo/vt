@@ -7,7 +7,7 @@
         </h1>
     </a>
 
-    <nav id="navmenu" class="navmenu"></nav>
+    <nav id="navmenu" name="navmenu" class="navmenu"></nav>
 
     <div class="header-social-links">
         <a href="#" class="twitter" title="Twitter"><i class="bi bi-twitter-x"></i></a>
@@ -19,7 +19,7 @@
 <script>
     function load_menu() {
         const tbl_cont = $("#navmenu");
-        const posturl = "../assets/nav.html";
+        const posturl = "nav.html";
         tbl_cont.load(posturl);
         return;
     }
