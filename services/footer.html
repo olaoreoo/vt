@@ -11,7 +11,7 @@
 
         <div class="newsletter-form">
           <h5>Stay Updated</h5>
-          <form action="/forms/newsletter.php" method="post" class="form">
+          <form id="frm_newsletter" name="frm_newsletter"  action="/forms/newsletter.php" method="post" class="form">
             <div class="input-group">
               <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
               <button type="submit" class="btn-subscribe">
@@ -19,9 +19,9 @@
               </button>
             </div>
             <div class="form-actions">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Thank you for subscribing!</div>
+              <div class="loading hide_ele">Loading</div>
+              <div class="error-message hide_ele"></div>
+              <div class="sent-message hide_ele">Thank you for subscribing!</div>
             </div>
           </form>
         </div>
@@ -126,3 +126,4 @@
     </div>
   </div>
 </div>
+<script src="../../assets/js/handle_newsletter.js"></script>

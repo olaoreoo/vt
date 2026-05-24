@@ -201,15 +201,22 @@
   <script>
     $().ready(function () {
 
-    function load_header() {
-      const tbl_cont = $("#header");
-      posturl = "../header.html";
-      tbl_cont.load(posturl);
-      console.log("loaded - header");
-      return;
-    }
-    load_header();
-
+      function load_header() {
+        const tbl_cont = $("#header");
+        posturl = "../header.html";
+        tbl_cont.load(posturl);
+        console.log("loaded - header");
+        return;
+      }
+      load_header();
+      function load_footer() {
+        const tbl_cont = $("#footer");
+        posturl = "../footer.html";
+        tbl_cont.load(posturl);
+        console.log("loaded - footer");
+        return;
+      }
+      load_footer();
     });
 
   </script>
