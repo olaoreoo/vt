@@ -9,11 +9,11 @@
 (function () {
   "use strict";
 
-  $(document).on("click", "#frm_contact .btn-submit ", function (e) {
+  $(document).on("click", ".btn-request ", function (e) {
     // e.preventDefault();
-    console.log("[submit] new Contact");
+    console.log("[submit] new frm_inquiry");
 
-    const thisForm = $("#frm_contact");
+    const thisForm = $("#frm_inquiry");
 
     try {
       console.log("[validate] new Message");
@@ -23,7 +23,7 @@
       var msg_sent = $(".sent-message");
 
       msg_loading.removeClass("hide_ele");
-      var posturl = "forms/contact_2.php";
+      var posturl = "../forms/contact_2.php";
 
       // $("#frm_contact").validate({
       thisForm.validate({
@@ -66,7 +66,7 @@
 
           // Serialize the form data.
           var formData = $(thisForm).serialize();
-          var posturl = "forms/contact2.php";
+          var posturl = "./../../forms/contact2.php";
 
           $.ajax({
             type: "POST",
