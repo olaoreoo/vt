@@ -1,0 +1,30 @@
+[
+  {
+    "eyeColor": "brown",
+    "name": "Carey Savage",
+    "gender": "female",
+    "company": "VERAQ",
+    "email": "careysavage@veraq.com",
+    "phone": "+1 (897) 574-3014",
+    "address": "458 Willow Street, Henrietta, California, 7234",
+    "registered": "2014-05-21T01:56:51 -01:00",
+    "latitude": 63.89502,
+    "longitude": 62.369807,
+    "greeting": "Hello, Carey Savage! You have 4 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "eyeColor": "brown",
+    "name": "Carey Savage",
+    "gender": "female",
+    "company": "VERAQ",
+    "email": "careysavage@veraq.com",
+    "phone": "+1 (897) 574-3014",
+    "address": "458 Willow Street, Henrietta, California, 7234",
+    "registered": "2014-05-21T01:56:51 -01:00",
+    "latitude": 63.89502,
+    "longitude": 62.369807,
+    "greeting": "Hello, Carey Savage! You have 4 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]
