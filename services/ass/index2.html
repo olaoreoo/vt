@@ -177,13 +177,26 @@
         </div>
 
     </div>
-    <script>
-  function load_service_qoute() {
-    const tbl_cont = $(".inquiry-form-wrapper");
-    const posturl = "../../components/service_qoute.html";
-    tbl_cont.load(posturl);
-    return;
-  }
-  load_service_qoute();
-    </script>
-
+<script>
+    function load_service_qoute() {
+        const tbl_cont = $(".inquiry-form-wrapper");
+        const posturl = "../../components/service_qoute.html";
+        tbl_cont.load(posturl);
+        return;
+    }
+    load_service_qoute();
+    function load_workflow() {
+        const tbl_cont = $(".process-timeline");
+        const posturl = "../../components/workflow.html";
+        tbl_cont.load(posturl);
+        return;
+    }
+    load_workflow();
+    function load_stafftest() {
+        const tbl_cont = $(".client-feedback");
+        const posturl = "../../components/stafftest.html";
+        tbl_cont.load(posturl);
+        return;
+    }
+    load_stafftest();
+</script>
