@@ -10,11 +10,11 @@ import {
 } from "./custom.js";
 
 load_header();
-// load_services();
-// load_footer();
+load_services();
+load_footer();
 
-// load_about();
+load_about();
 load_whyus();
 load_faq();
 load_team();
-// load_contact();
+load_contact();
