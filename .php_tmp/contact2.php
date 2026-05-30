@@ -1,6 +1,6 @@
 <?php
-$data['success_db'] = 'error';
-$data['message_db'] = 'Ooops, error. Something went wrong!';
+// $data['success_db'] = 'error';
+// $data['message_db'] = 'Ooops, error. Something went wrong!';
 // echo json_encode($data);
 // return;
 
@@ -39,13 +39,11 @@ function sendEmail($cto, $cfrom, $cname, $csubject, $tbody)
             $data['success_db']   = 'success';
             $data['email_notify'] = 'success';
             $data['message_db']   = 'Your message has been sent!';
-
             echo json_encode($data);
             return;
         } else {
             $data['success_db'] = 'error';
             $data['message_db'] = 'Ooops, there was an error!';
-
             echo json_encode($data);
             return;
         }
@@ -54,7 +52,6 @@ function sendEmail($cto, $cfrom, $cname, $csubject, $tbody)
         $data['nofity_error'] = $ex->getMessage();
         $data['success_db']   = 'error';
         $data['message_db']   = 'Ooops, there was an error. Please check your connection!';
-
         echo json_encode($data);
         return;
     }

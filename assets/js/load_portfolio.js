@@ -6,7 +6,7 @@ import {
   load_services,
   load_faq,
   load_contact,
-} from "./custom.js";
+} from "../../portfolio/portfolio.js";
 
 load_header();
 load_services();

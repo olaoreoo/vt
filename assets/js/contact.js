@@ -10,64 +10,63 @@
   "use strict";
 
   $(document).on("click", "#frm_contact .btn-submit ", function (e) {
-    // e.preventDefault();
+    e.preventDefault();
     console.log("[submit] new Contact");
 
     const thisForm = $("#frm_contact");
+    console.log("[validate] new Message");
 
-    try {
-      console.log("[validate] new Message");
+    var msg_loading = $(".loading");
+    var msg_error = $(".error-message");
+    var msg_sent = $(".sent-message");
 
-      var msg_loading = $(".loading");
-      var msg_error = $(".error-message");
-      var msg_sent = $(".sent-message");
+    msg_loading.removeClass("hide_ele");
+    var posturl = "forms/contact_2.php";
 
-      msg_loading.removeClass("hide_ele");
-      var posturl = "forms/contact_2.php";
+    // $("#frm_contact").validate({
+    thisForm.validate({
+      // validator settings
 
-      // $("#frm_contact").validate({
-      thisForm.validate({
-        // validator settings
-
-        // Specify validation rules
-        rules: {
-          name: {
-            required: true,
-          },
-          email: {
-            required: true,
-          },
-          subject: {
-            required: true,
-          },
-          message: {
-            required: true,
-          },
+      // Specify validation rules
+      rules: {
+        name: {
+          required: true,
         },
-        // Specify validation error messages
+        email: {
+          required: true,
+        },
+        subject: {
+          required: true,
+        },
         message: {
-          name: {
-            required: "Please give us your nsme.",
-          },
-          email: {
-            required: "Please select a Department?",
-          },
-          subject: {
-            required: "Please enter a Subject?",
-          },
-          message: {
-            required: "Please enter a message?",
-          },
+          required: true,
         },
+      },
+      // Specify validation error messages
+      message: {
+        name: {
+          required: "Please give us your nsme.",
+        },
+        email: {
+          required: "Please select a Department?",
+        },
+        subject: {
+          required: "Please enter a Subject?",
+        },
+        message: {
+          required: "Please enter a message?",
+        },
+      },
 
-        // in the "action" attribute of the form when valid
-        submitHandler: function (thisForm, e) {
-          console.log("[validated] new Message");
+      // in the "action" attribute of the form when valid
+      submitHandler: function (thisForm, e) {
+        console.log("[validated] new Message");
 
-          // Serialize the form data.
-          var formData = $(thisForm).serialize();
-          var posturl = "forms/contact2.php";
+        // Serialize the form data.
+        var formData = $(thisForm).serialize();
+        var posturl = "forms/contact2.php";
 
+        try {
           $.ajax({
             type: "POST",
             url: posturl,
@@ -77,6 +76,7 @@
           }).done(function (response) {
             if (response) {
               console.log("[received] Response");
+              // return;
 
               if (response.success_db === "success") {
                 console.log("[response] Successfull");
@@ -103,15 +103,15 @@
               return;
             }
           });
-        },
-      });
-    } catch (e) {
-      msg_sent.addClass("hide_ele");
-      msg_loading.addClass("hide_ele");
-      msg_error.removeClass("hide_ele");
-      msg_error.text("Error. Something went wrong");
-      console.log("[response] Server Error");
-      return;
-    }
-  });
-})();
+        } catch (e) {
+          msg_sent.addClass("hide_ele");
+          msg_loading.addClass("hide_ele");
+          msgerror.removeClass("hide_ele");
+          msg_error.text("Error. Something went wrong");
+          console.log("[response] Server Error");
+          // return;
+        }
+      },
+    });
+  })();
+});

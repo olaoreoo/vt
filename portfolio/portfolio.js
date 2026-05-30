@@ -3,7 +3,6 @@
  * Begining of custom scripts
  */
 
-
 export function load_header() {
   const tbl_cont = $("#header");
   const posturl = "./components/header.html";
@@ -11,10 +10,17 @@ export function load_header() {
   return;
 }
 
+// export function load_menu() {
+//   const tbl_cont = $("#navmenu");
+//   const posturl = "components/nav_root.html";
+//   tbl_cont.load(posturl);
+//   return;
+// }
+// let tbl_contw = document.getElementById("footer");
+
 export function load_footer() {
-  // let tbl_contw = document.getElementById("footer");
   const tbl_cont = $("#footer");
-  const posturl = "components/footer.html";
+  const posturl = "./components/footer.html";
   tbl_cont.load(posturl);
   return;
 }
@@ -22,7 +28,7 @@ export function load_footer() {
 export function load_services() {
   // let tbl_contw = document.getElementById("footer");
   const tbl_cont = $("#services");
-  const posturl = "components/services.html";
+  const posturl = "./components/services.html";
   tbl_cont.load(posturl);
   tbl_cont.removeClass("hide");
   return;

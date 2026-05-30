@@ -13,4 +13,4 @@ load_menu();
 
 load_services();
 // load_team();
-// load_faq();
+load_faq();

@@ -207,6 +207,8 @@
     .forEach((faqItem) => {
       faqItem.addEventListener("click", () => {
         faqItem.parentNode.classList.toggle("faq-active");
+        console.log(faqItem);
+        
       });
     });
 
