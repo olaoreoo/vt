@@ -2404,7 +2404,8 @@ section,
 
 .portfolio .portfolio-image img {
   width: 100%;
-  aspect-ratio: 4/3;
+  /* aspect-ratio: 4/3; */
+  aspect-ratio: auto;
   object-fit: cover;
   transition: transform 0.5s ease-out;
 }
