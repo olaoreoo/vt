@@ -5,7 +5,7 @@
 
 export function load_header() {
   const tbl_cont = $("#header");
-  const posturl = "./components/header.html";
+  const posturl = "components/header.html";
   tbl_cont.load(posturl);
   return;
 }

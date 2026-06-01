@@ -76,6 +76,7 @@ export function load_about() {
   tbl_cont.removeClass("hide");
   return;
 }
+
 export function load_contact() {
   const tbl_cont = $("#contact");
   const posturl = "components/contact.html";
