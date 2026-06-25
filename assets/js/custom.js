@@ -3,7 +3,6 @@
  * Begining of custom scripts
  */
 
-
 export function load_header() {
   const tbl_cont = $("#header");
   const posturl = "./components/header.html";
@@ -84,3 +83,25 @@ export function load_contact() {
   tbl_cont.removeClass("hide");
   return;
 }
+
+/**
+ * Get default custom data
+ */
+
+const company_data = async () => {
+  // async () => {
+  const fetch_url = "./assets/data/numbers.json";
+  try {
+    const res = await fetch(fetch_url);
+    const data = await res.json();
+
+    if (res.ok) {
+      console.log(data);
+      return data;
+    }
+  } catch (error) {
+    // console.log(error);
+    console.error("There was an error! ");
+  }
+};
+

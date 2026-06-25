@@ -9,10 +9,10 @@ import {
 } from "../../portfolio/portfolio.js";
 
 load_header();
-load_services();
+// load_services();
 load_footer();
 
 // load_about();
 // load_whyus();
 // load_faq();
-load_contact();
+// load_contact();    
