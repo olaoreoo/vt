@@ -1,5 +1,4 @@
 import {
-  load_footer,
   load_header,
   load_about,
   load_whyus,
@@ -7,6 +6,7 @@ import {
   load_faq,
   load_contact,
   load_team,
+  load_footer,
 } from "./custom.js";
 
 load_header();

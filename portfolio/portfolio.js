@@ -10,12 +10,12 @@ export function load_header() {
   return;
 }
 
-// export function load_menu() {
-//   const tbl_cont = $("#navmenu");
-//   const posturl = "components/nav_root.html";
-//   tbl_cont.load(posturl);
-//   return;
-// }
+export function load_menu() {
+  const tbl_cont = $("#navmenu");
+  const posturl = "components/nav_root.html";
+  tbl_cont.load(posturl);
+  return;
+}
 // let tbl_contw = document.getElementById("footer");
 
 export function load_footer() {

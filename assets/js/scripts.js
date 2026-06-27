@@ -1,21 +1,18 @@
-// using fetch
 
-const company_data = async () => {
+const company_data = async (item) => {
   const fetch_url = "./assets/data/numbers.json";
   try {
     const res = await fetch(fetch_url);
     const data = await res.json();
 
     if (res.ok) {
-      // console.log(data);
-      const responseTime = data.responseTime;
-      console.log(responseTime);
-      return responseTime;
+      const result = data[item];
+      // console.log(item, result);
+      return result;
     }
   } catch (error) {
     console.error(error);
-    // console.log("There was an error! ");
   }
 };
 
-company_data();
+document.querySelector("#name").innerHTML = company_data("age");
