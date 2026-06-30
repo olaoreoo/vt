@@ -3,11 +3,13 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="">
         <h1 id="sitename" name="sitename" class="logo sitename">
-            VirtualTechechnologies
-        </h5>
+            VirtualTechnologies
+            </h5>
     </a>
 
-    <nav id="navmenu" class="navmenu"></nav>
+    <nav id="navmenu"  name="navmenu" class="navmenu"></nav>
+    <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
+
     <div class="header-social-links">
         <a href="#" class="twitter" title="Twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook" title="FaceBook"><i class="bi bi-facebook"></i></a>
@@ -16,11 +18,14 @@
     </div>
 </div>
 <script>
-    function load_menu() {
+
+        load_menu();
+          function load_menu() {
         const tbl_cont = $("#navmenu");
         const posturl = "./components/root_nav.html";
         tbl_cont.load(posturl);
-        return;
-    }
-    load_menu();
+        // return;
+    }  
+    
+
 </script>
