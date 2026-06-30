@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>ICT Support Services - Virtual Technologies</title>
+  <title>ICT Support Services - VirtualTech</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -92,6 +92,23 @@
       load_footer();
     });
 
+    function load_servicedata_tbl() {
+      const tbl_cont = $("#service-details");
+      var posturl = "index2.html";
+      tbl_cont.load(posturl);
+      console.log("loaded - services details");
+      return;
+    }
+    load_servicedata_tbl();
+
+    function load_menu() {
+      const tbl_cont = $("#navmenu");
+      posturl = "./../nav.html";
+      tbl_cont.load(posturl);
+      console.log("loaded - services nav");
+      return;
+    }
+    load_menu();
   </script>
 </body>
 

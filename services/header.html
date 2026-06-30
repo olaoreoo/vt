@@ -7,8 +7,7 @@
   </a>
 
   <nav id="navmenu" class="navmenu"></nav>
-  <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
-<!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
+
   <div class="header-social-links">
     <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -22,17 +21,17 @@
     const tbl_cont = $("#service-details");
     var posturl = "index2.html";
     tbl_cont.load(posturl);
-    console.log("service-details loaded");
+    console.log("loaded - services nav");
     return;
   }
-  load_servicedata_tbl();
+  // load_servicedata_tbl();
 
   function load_menu() {
     const tbl_cont = $("#navmenu");
     posturl = "./../nav.html";
     tbl_cont.load(posturl);
-    console.log("loaded - nav");
+    console.log("loaded - services nav");
     return;
   }
-  load_menu();
+  // load_menu();
 </script>
